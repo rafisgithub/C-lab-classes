@@ -7,9 +7,10 @@ int main(){
 		if(a[i]==item){
 			printf("Item found location at =%d",i);
 			break;
-		}else{
-			printf("item not found!");
-			break;
 		}
 	}
+	if(i==5){
+		printf("item not found\n");
+	}
+	
 }
