@@ -1,15 +1,21 @@
 #include<stdio.h>
 int main(){
-	int a[5]={12,32,43,65,34},i,item;
+	int arr[100],i,item,n;
+	printf("Enter number of elements:\n");
+	scanf("%d",&n);
+	printf("Enter %d emelemts:\n",n);
+	for(i=0;i<n;i++){
+		scanf("%d",&arr[i]);
+	}
 	printf("Input Searching item..\n");
 	scanf("%d",&item);
-	for(i=0;i<5;i++){
-		if(a[i]==item){
-			printf("Item found location at =%d",i);
+	for(i=0;i<n;i++){
+		if(arr[i]==item){
+			printf("Item found location at =%d",i+1);
 			break;
 		}
 	}
-	if(i==5){
+	if(i==n){
 		printf("item not found\n");
 	}
 	
