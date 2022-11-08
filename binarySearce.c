@@ -14,10 +14,10 @@ int main(){
 	
 	while(first<=last){
 		middle=(first+last)/2;
-		if(arr[middle]==item){
+		if(item==arr[middle]){
 			printf("%d is found at location :%d\n",item,middle+1);
 			break;
-		}else if(arr[middle]<item){
+		}else if(item>arr[middle]){
 			first=middle+1;
 		}else{
 			last=middle-1;
