@@ -17,11 +17,10 @@ int pop(){
 		int val=stack[top];
 		top=top-1;
 		return val;
-	}else{
+	}
 		printf("Exception from Pop!Empty Stack\n");
 		return -1;
-	}
-	return -1;
+	
 }
 int peek(){
 	if(top>=0){
