@@ -17,6 +17,7 @@ int main(){
 	a->next=b;
 	b->next=c;
 	c->next=NULL;
+	//Traverse a linked list
 	while(a!=NULL){
 		printf("%d->",a->data);
 		a=a->next;
